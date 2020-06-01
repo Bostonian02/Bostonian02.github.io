@@ -1,0 +1,143 @@
+* {box-sizing:border-box}
+
+html {
+    background-color: #f0f0f0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    background-color: #faf5f2;
+    margin: auto;
+    margin-top: 10%;
+    padding: 10px;
+    width: 80%;
+}
+
+#fancy-box {
+    background-color: #faf5f2;
+    margin: auto;
+    border: 1px solid rgb(150, 148, 146);
+    text-align: center;
+    color: rgb(150, 148, 146);
+    width: 99%;
+    padding: 5px;
+    display: inline-block;
+}
+
+h5 {font-style: italic;}
+
+a:link {
+    color: rgb(150, 148, 146);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(150,148,146);
+    text-decoration: none;
+}
+
+a:hover {text-decoration: underline;}
+
+.header_image {
+    width: 25%;
+    height: auto;
+    margin: 1vw;
+}
+
+#wrapper {
+    background-color: #faf5f2;
+    margin: auto;
+    margin-top: 10%;
+    padding-top: 5%;
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.slideshow_image {
+    margin: auto;
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Text */
+.text {
+    color: black;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
